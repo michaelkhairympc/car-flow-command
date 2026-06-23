@@ -1,5 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "npm run build",
-  "framework": null
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "https://admirable-moxie-b64a25.netlify.app/$1"
+    }
+  ]
 }
